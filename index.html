@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caderno de estudo — Método dos 5 passos</title>
+<meta name="description" content="Caderno de estudo com resumos, pegadinhas, flashcards, questões comentadas e o Método dos 5 passos.">
+<meta name="theme-color" content="#1B2A4A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Caderno">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<header class="topo"><div class="topo-in"><span class="marca">📒 Caderno de estudo</span><div class="discs" id="discs" role="tablist" aria-label="Disciplinas"></div><button class="btn-topo" id="btnBackup" type="button">⇅ Backup</button></div></header>
+<div class="app">
+  <nav class="divisorias" id="nav" aria-label="Temas"></nav>
+  <main id="main"></main>
+</div>
+<dialog id="dlgBackup" aria-labelledby="tBackup">
+  <h3 id="tBackup">Backup do progresso</h3>
+  <p>O progresso fica salvo neste navegador. Para usar em outro aparelho, baixe o backup aqui e restaure lá. Ao restaurar, os dados são juntados: vale a melhor nota de cada tema e nada se perde.</p>
+  <div class="acoes">
+    <button class="btn pri" id="btnBaixar" type="button">Baixar backup</button>
+    <label class="btn arquivo">Restaurar backup<input type="file" id="arqBackup" accept=".json,application/json"></label>
+    <button class="btn" id="btnFechar" type="button">Fechar</button>
+  </div>
+</dialog>
+<noscript><p style="padding:20px">Ative o JavaScript para usar o caderno.</p></noscript>
+<script src="js/dados.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
